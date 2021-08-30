@@ -10,6 +10,6 @@ describe('<TextComponent />', () => {
 
   it('should render a text', () => {
     const { container } = renderTheme(<TextComponent>Children</TextComponent>);
-    expect(container).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

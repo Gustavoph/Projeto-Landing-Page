@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuLink /> should render a link 1`] = `
+.c0 {
+  display: block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  color: #0a1128;
+  position: relative;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  bottom: 0.75rem;
+  left: 50%;
+  height: 0.2rem;
+  background: #dc143c;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c0:hover::after {
+  width: 50%;
+  left: 25%;
+}
+
+<a
+  class="c0"
+  href="https://www.google.com/"
+  target="_self"
+>
+  Children
+</a>
+`;
