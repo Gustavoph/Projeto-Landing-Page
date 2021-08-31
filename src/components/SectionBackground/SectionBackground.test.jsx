@@ -9,7 +9,9 @@ describe('<SectionBackground />', () => {
         <h1>Children</h1>
       </SectionBackground>,
     );
-    expect(screen.getByRole('heading')).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Children' }),
+    ).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 
@@ -19,7 +21,9 @@ describe('<SectionBackground />', () => {
         <h1>Children</h1>
       </SectionBackground>,
     );
-    expect(screen.getByRole('heading')).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Children' }),
+    ).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });
